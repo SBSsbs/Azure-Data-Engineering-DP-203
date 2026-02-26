@@ -116,7 +116,7 @@ while ($stop -ne 1){
         }
     }
     else {
-        $resourceGroupName = "dp203-$suffix"
+        $resourceGroupName = "semeh-$suffix"
         Write-Host "Creating $resourceGroupName resource group ..."
         New-AzResourceGroup -Name $resourceGroupName -Location $Region | Out-Null
         $dbworkspace = "databricks$suffix"
